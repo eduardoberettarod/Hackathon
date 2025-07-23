@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publicar Aviso</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="card-form">
+    <img src="imgs/senac-logo.png" alt="Logo do SENAC" class="logo-card">
+    <h2>Publicar Novo Aviso</h2>
+
+    <form id="form-aviso">
+      <div class="form-group">
+        <label for="titulo">Título do Aviso:</label>
+        <input type="text" id="titulo" name="titulo" placeholder="Ex: Dou aulas de física" required>
+      </div>
+
+      <div class="form-group">
+        <label for="categoria">Categoria:</label>
+        <select id="categoria" name="categoria" required>
+          <option value="">Selecione</option>
+          <option value="Acadêmico">Acadêmico</option>
+          <option value="Vendas">Vendas</option>
+          <option value="Projetos">Projetos</option>
+          <option value="Eventos">Eventos</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="descricao">Descrição:</label>
+        <textarea id="descricao" name="descricao" placeholder="Detalhe aqui o que você oferece ou procura..." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="contato">Contato (WhatsApp ou E-mail):</label>
+        <input type="text" id="contato" name="contato" placeholder="(xx) xxxxx-xxxx ou email@exemplo.com" required>
+      </div>
+
+      <button type="submit">Publicar</button>
+    </form>
+  </div>
+
+<button id="btn-publicar"><img src="imgs/lapis.png"></button>
+
+<script src="javascript/script.js"></script>
+</body>
+</html>
