@@ -95,6 +95,18 @@ form button:hover {
     height: 40px;
 }
 
+@media (max-width: 600px) {
+  .card-form {
+    padding: 1rem;
+    scale: 0.9;
+  }
+
+  form button {
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+}
+
 #btn-publicar:active {
   transform: scale(0.95);
 }
