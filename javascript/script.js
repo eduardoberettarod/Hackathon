@@ -1,8 +1,7 @@
 function PublicarAviso(){
-    document.getElementById("card-form").style.opacity = "1";
-    document.getElementById("card-form").style.scale = "0.1";
+    document.getElementById("card-form").style.display = "block";
 }
 
 function FecharAviso(){
-    document.getElementById("card-form").style.opacity = "0";
+    document.getElementById("card-form").style.display = "none";
 }
